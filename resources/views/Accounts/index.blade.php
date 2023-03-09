@@ -8,8 +8,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    index page
+<body class="w-full h-full flex flex-col pt-16">
+    @include('Accounts.Components.Header')
+    <main class="w-full flex flex-col py-4">
+        @yield('content')
+    </main>
 </body>
 
 </html>

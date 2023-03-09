@@ -17,10 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 // Test Routes delete after Merge with API
 Route::get('/', function () {
-    return view('Accounts.index');
+    return view('Accounts.Pages.Main');
 });
-
-
+Route::get('/Garage', function () {
+    return view('Accounts.Pages.Garage');
+});
 
 
 // Auth
